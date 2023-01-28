@@ -26,7 +26,6 @@ html{
 }
   body{
     background-color: var(--primary-color);
-    overflow:hidden;
   }
   nav {
     font-family: "Alice", serif;
@@ -62,7 +61,7 @@ nav li a {
   font-family: "Alice", serif;
   font-family: "Mulish", sans-serif;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   /* border: 2px solid red; */
   justify-content: center;
@@ -396,9 +395,7 @@ li i {
   }
 }
 @media (max-width: 1200px) {
-  body{
-    overflow:visible;
-  }
+  
   nav ul {
     display: flex;
     position: fixed;
