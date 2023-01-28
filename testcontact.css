@@ -396,6 +396,9 @@ li i {
   }
 }
 @media (max-width: 1200px) {
+  body{
+    overflow:visible;
+  }
   nav ul {
     display: flex;
     position: fixed;
