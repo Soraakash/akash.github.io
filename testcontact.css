@@ -21,7 +21,9 @@
     --button-color:#444646;
     --fifth-color: #1E2022;
   }
-
+html{
+  overflow:hiddem;
+}
   body{
     background-color: var(--primary-color);
     overflow:hidden;
