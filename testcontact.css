@@ -24,6 +24,7 @@
 
   body{
     background-color: var(--primary-color);
+    overflow:hidden;
   }
   nav {
     font-family: "Alice", serif;
