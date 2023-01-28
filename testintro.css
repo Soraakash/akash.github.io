@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Mulish:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #fff;
+  --secondary-color: #453c67;
+  --fifth-color: #fff;
+}
+
+.dark-theme {
+  --primary-color: #1e2022;
+  --secondary-color: #a1aab1;
+  --fifth-color: #1e2022;
+}
+body {
+  background-color: var(--primary-color);
+}
+
+nav {
+  font-family: "Alice", serif;
+  font-family: "Mulish", sans-serif;
+  /* background-color: rgba(44, 116, 179, 0.1); */
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  font-size: 20px;
+  color: var(--secondary-color);
+  padding: 35px;
+}
+nav li a:hover {
+  color: #e2577e;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 22px;
+  /* font-weight: 400; */
+  color: var(--secondary-color);
+  padding: 25px 0px;
+}
+.icoon i {
+  font-size: 25px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.main {
+  /* background-color: yellow; */
+  font-family: "Alice", serif;
+  font-family: "Mulish", sans-serif;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.akash {
+  font-family: "Alice", serif;
+  font-family: "Mulish", sans-serif;
+  position: absolute;
+  top: 27px;
+  left: 45px;
+}
+.akash h1 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  /* color: #e19caf; */
+}
+h1 .ak {
+  color: #e2577e;
+}
+.mygoodpic {
+  width: 35vw;
+  border-radius: 15px;
+}
+.mygoodpic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+.myself-about {
+  height: 80vh;
+  width: 70vw;
+  border-radius: 15px;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+  padding: 10px;
+}
+.myintroduction {
+  /* background-color: #355c7d; */
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  /* border: 1px solid red; */
+  margin-left: 40px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #e2577e;
+  font-weight: 200;
+}
+.first-row h4,
+h3 {
+  font-weight: 400;
+}
+.first-row div,
+.second-row div {
+  width: 100%;
+}
+.second-row h4,
+h3 {
+  font-weight: 400;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  color: #e2577e;
+}
+
+.third-first-content ul {
+  display: flex;
+  flex-direction: row;
+  color: #e2577e;
+}
+.third-first-content ul li {
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 15px;
+  margin-top: 10px;
+
+  font-size: 13px;
+  border: 1px solid #e2577e;
+  font-weight: 500;
+  color: #e2577e;
+  border-radius: 25px;
+}
+
+/* .third-first-content ul li:first-child{
+  background-color: #dd879f;
+  color: white;
+} */
+.abouttme div {
+  margin-top: 2px;
+  padding: 5px;
+}
+.third-row h4 {
+  font-weight: 400;
+  font-size: 17px;
+  color: #e2577e;
+}
+.fourth-row h4 {
+  font-weight: 400;
+  color: #e2577e;
+}
+.headingabout h1 {
+  text-align: left;
+  font-weight: 300;
+  color: #e2577e;
+  padding: 15px;
+  font-size: 60px;
+}
+.openmenu,
+.closemenu {
+  color: var(--secondary-color);
+  font-size: 24px;
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1535px) {
+  .myself-about {
+    height: 80vh;
+    width: 90vw;
+    border-radius: 15px;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    padding: 10px;
+}
+  .mygoodpic {
+    width: 50vw;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .mygoodpic {
+    display: none;
+  }
+
+  .myintroduction {
+    /* background-color: #355c7d; */
+    width: 100vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* border: 1px solid red; */
+    margin-left: 0px;
+  }
+  nav ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--fifth-color);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80vw;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: top 1s ease-in-out;
+    display: none;
+  }
+  .openmenu {
+    display: block;
+    z-index: 15;
+  }
+  .closemenu {
+    display: none;
+    z-index: 15;
+  }
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--fifth-color);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80vw;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: top 1s ease-in-out;
+    display: none;
+  }
+  .hello h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #e2577e;
+  }
+
+  .openmenu {
+    display: block;
+    z-index: 15;
+  }
+  .closemenu {
+    display: none;
+    z-index: 15;
+  }
+  .main {
+    /* background-color: yellow; */
+    font-family: "Alice", serif;
+    font-family: "Mulish", sans-serif;
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    margin-top: 35%;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mygoodpic {
+    display: block;
+    height: 80vh;
+    width: 90vw;
+    /* background-color: red; */
+    margin-left: 0px;
+  }
+  /* .mygoodpic img{
+    height: 60vh;
+  } */
+  
+  .myself-about {
+    height: 100vh;
+    width: 90vw;
+    border-radius: 15px;
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .myintroduction {
+    /* background-color: #355c7d; */
+    width: 100vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* border: 1px solid red; */
+    margin-left: 0px;
+  }
+
+  .headingabout h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 300;
+    color: #e2577e;
+    padding: 15px;
+    font-size: 60px;
+  }
+
+  .first-row h4,
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .main {
+    /* background-color: yellow; */
+    font-family: "Alice", serif;
+    font-family: "Mulish", sans-serif;
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    margin-top: 30%;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mygoodpic {
+    display: block;
+    height: 50vh;
+    width: 90vw;
+    /* background-color: red; */
+    margin-left: 0px;
+  }
+  /* .mygoodpic img{
+    height: 60vh;
+  } */
+  
+  .myself-about {
+    height: 100vh;
+    width: 90vw;
+    border-radius: 15px;
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .myintroduction {
+    /* background-color: #355c7d; */
+    width: 100vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* border: 1px solid red; */
+    margin-left: 0px;
+  }
+  .first-row h4,
+  h3 {
+    font-size: 15px;
+  }
+  .headingabout h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 300;
+    color: #e2577e;
+    padding: 15px;
+    font-size: 50px;
+  }
+  .abouttme {
+    padding: 15px;
+  }
+  .abouttme div {
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  .third-first-content ul li {
+    padding: 8px;
+    font-size: 8px;
+  }
+}

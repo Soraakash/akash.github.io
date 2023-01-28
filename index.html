@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>akash</title>
+    <link rel="stylesheet" href="testindex.css" />
+    <script
+      src="https://kit.fontawesome.com/40db44c0aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!--Body Of HTML-->
+  <body>
+    <!--Navigation Bar Div-->  
+    <div class="akash">
+      <h1><span class="ak">ak</span>ash</h1>
+    </div>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="testintro.html">About Me</a></li>
+          <li><a href="testwork.html">My Works</a></li>
+          <!-- <li><a href="/testindex.html">Services</a></li> -->
+          <li><a href="testcontact.html">Contact Me</a></li>
+          <li class="icoon" ><img src="moon.png" id="darkicon"></li>
+        </ul>
+      </nav>
+      <div class="openmenu"><i class="fa fa-bars"></i></div>
+      <div class="closemenu"><i class="fa fa-times"></i></div>
+    
+    <!--Main Content Area-->
+    <div class="main">
+      <div class="info-container">
+        <div class="devInfo">
+          <div class="hello">
+            <h1>Hey There !!</h1>
+          </div>
+          <div class="myname">
+            <h2>
+              <span class="myself"> I'm </span>
+              <span class="auto-input"></span>
+            </h2>
+          </div>
+          <div class="moreabout">
+            <p>
+              You can reach out to me if you need any help in making website for
+              you or your business.
+            </p>
+          </div>
+          <div class="devbuttons">
+            <a href="testcontact.html"><button class="bt1">Contact Me</button></a>
+            <a href="resume.pdf" target="_blank"
+              ><button class="bt2">Download CV</button></a
+            >
+          </div>
+        </div>
+        <div class="devPic">
+          <img src="new.png" class="myselfimg"/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- TYPING ANIMATION -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      console.log('Hello Index')
+      var typed = new Typed(".auto-input", {
+        strings: ["Akash Kumar", "Web Developer", "Programmer", "Designer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="index2.js"></script>
+  </body>
+</html>

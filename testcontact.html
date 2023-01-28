@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>akash</title>
+    <link rel="stylesheet" href="testcontact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/40db44c0aa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="akash">
+      <h1><span class="ak">ak</span>ash</h1>
+    </div>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="testintro.html">About Me</a></li>
+          <li><a href="testwork.html">My Works</a></li>
+          <!-- <li><a href="/testindex.html">Services</a></li> -->
+          <li><a href="testcontact.html">Contact Me</a></li>
+          <li class="icoon" ><img src="moon.png" id="darkicon"></li>
+        </ul>
+      </nav>
+      <div class="openmenu"><i class="fa fa-bars"></i></div>
+      <div class="closemenu"><i class="fa fa-times"></i></div>
+    <div class="main">
+      <div class="contacts">
+        <div class="con-form">
+          <form action="" method="post" id="contact_form">
+            <div class="first-contact-row">
+              <div class="first-name">
+                <span class="naaame"> First name </span>
+                <input type="text" name="" autocomplete="off" />
+              </div>
+              <div class="email-name">
+                <span class="email"> Last name </span>
+                <input type="text" autocomplete="off" />
+              </div>
+            </div>
+            <div class="second-contact-row">
+              <div class="ur-country">
+                <label for="country">Country:</label>
+                <select name="country" id="country" form="contact_form">
+                  <option disabled selected value></option>
+                  <option value="ind">India</option>
+                  <option value="jyp">Japan</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+              <div class="email-name">
+                <span class="email"> Your email </span>
+                <input type="email" autocomplete="off" />
+              </div>
+            </div>
+            <div class="third-contact-row">
+              <span> Message: </span>
+              <textarea
+                name=""
+                id=""
+                cols="15"
+                rows="5"
+                placeholder="Write your message."
+              ></textarea>
+            </div>
+          </form>
+          <button type="submit">Submit</button>
+        </div>
+        <div class="con-img">
+          <div class="con-hi">
+            <h1>Get a quote</h1>
+            <p>
+              Fill up the form and our team will contact you within 24 hours
+            </p>
+          </div>
+          <div class="mycontact-info">
+            <p>
+              <i class="fa-solid fa-envelope"></i>&nbsp akashweb123@gmail.com
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp Bihar,India</p>
+            <p><i class="fa-solid fa-phone"></i>&nbsp +91 6202215669</p>
+          </div>
+          <div class="con-social">
+            <div class="social-handles">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/___kun.sora/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/akash-kumar-b577b8161/"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/Soraakash"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Sorakash2504"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <!-- <script>
+      var icon = document.getElementById("darkicon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+        } else {
+          icon.src = "images/moon.png";
+        }
+      };
+    </script> -->
+    <script src="index2.js"></script>
+  </body>
+</html>
