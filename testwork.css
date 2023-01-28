@@ -255,7 +255,7 @@ h1 .ak{
     z-index: 2;
     flex-direction: column;
     justify-content: flex-start;
-    transition: top 1s ease-in-out;
+    transition: right 1s ease-in-out;
     display: none;
   }
   .hello h1 {
