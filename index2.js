@@ -65,3 +65,29 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 // take a variable which
+function sendMail()
+{
+  var params = {
+    fname: document.getElementById("fname").value,
+    lname: document.getElementById("lname").value,
+    country: document.getElementById("country").value,
+    email: document.getElementById("eemail").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceId = "service_9tzjzwd";
+const templateId = "template_x743uc9";
+
+emailjs
+  .send(serviceId,templateId,params)
+  .then((res)=>{
+    document.getElementById("fname").value = "";
+    document.getElementById("lname").value ="";
+    document.getElementById("country").value="";
+    document.getElementById("eemail").value="";
+    document.getElementById("message").value="";
+    console.log(res);
+    alert("Message Sent");
+  })
+  .catch((err) => console.log(err));
+}
