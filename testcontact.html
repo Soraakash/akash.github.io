@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>akash</title>
+    <link rel="shortcut icon" type="image/png" href="ak.png">
     <link rel="stylesheet" href="testcontact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -20,6 +21,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("RG7pIzZtiG7juReKZ");
+   })();
+</script>
   </head>
   <body>
     <div class="akash">
@@ -37,6 +47,8 @@
       </nav>
       <div class="openmenu"><i class="fa fa-bars"></i></div>
       <div class="closemenu"><i class="fa fa-times"></i></div>
+
+      
     <div class="main">
       <div class="contacts">
         <div class="con-form">
@@ -44,11 +56,11 @@
             <div class="first-contact-row">
               <div class="first-name">
                 <span class="naaame"> First name </span>
-                <input type="text" name="" autocomplete="off" />
+                <input type="text" id="fname" autocomplete="off" />
               </div>
               <div class="email-name">
                 <span class="email"> Last name </span>
-                <input type="text" autocomplete="off" />
+                <input type="text" id="lname" autocomplete="off" />
               </div>
             </div>
             <div class="second-contact-row">
@@ -64,21 +76,21 @@
               </div>
               <div class="email-name">
                 <span class="email"> Your email </span>
-                <input type="email" autocomplete="off" />
+                <input type="email" id="eemail"autocomplete="off" />
               </div>
             </div>
             <div class="third-contact-row">
               <span> Message: </span>
               <textarea
                 name=""
-                id=""
+                id="message"
                 cols="15"
                 rows="5"
                 placeholder="Write your message."
               ></textarea>
             </div>
           </form>
-          <button type="submit">Submit</button>
+          <button type="submit" onclick="sendMail()">Submit</button>
         </div>
         <div class="con-img">
           <div class="con-hi">
